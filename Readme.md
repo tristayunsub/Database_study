@@ -11,6 +11,7 @@
 
 를 통해 DB 팀프로젝트를 보며 참조할 생각이다.
 
+SQL 실무 https://www.youtube.com/watch?v=Yj5lcNnlwzk&list=PLxamkS6NrqZ1JKRJ83oMAyaNECwkPaJ0z&index=5&ab_channel=%ED%83%91%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4TOPDATASTUDIO
 
 
 책: 이것이 MYSQL이다, 데이터 모델링 이야기, 자바 ORM 표준) JPA 프로그래밍 : 스프링 데이터 예제 프로젝트로 배우는 전자정부 표준 데이터베이스 프레임워크.
