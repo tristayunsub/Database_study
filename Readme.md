@@ -21,3 +21,6 @@ Sqlp? Sqld
 
 친절한 sql튜닝
 오라클 성능고도화 원리와해법
+
+
+DATA ON AIR 실무 바이블 :https://dataonair.or.kr/db-tech-reference/d-guide/sql/
