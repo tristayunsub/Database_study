@@ -17,6 +17,8 @@
 
 SQL 실무 https://www.youtube.com/watch?v=Yj5lcNnlwzk&list=PLxamkS6NrqZ1JKRJ83oMAyaNECwkPaJ0z&index=5&ab_channel=%ED%83%91%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4TOPDATASTUDIO
 
+PL/SQL 학습 : https://goddaehee.tistory.com/category/4.%20Database/4_3%20%20Oracle%20%EA%B8%B0%EB%B3%B8?page=2 
+
 
 책: 이것이 MYSQL이다, 데이터 모델링 이야기, 자바 ORM 표준) JPA 프로그래밍 : 스프링 데이터 예제 프로젝트로 배우는 전자정부 표준 데이터베이스 프레임워크.
 : DB 성능 최적화를 위한 SQL 실전 가이드
