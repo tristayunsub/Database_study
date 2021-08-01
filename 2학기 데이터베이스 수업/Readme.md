@@ -7,3 +7,11 @@
 ![네이버영화ERD](https://user-images.githubusercontent.com/75001605/127763282-a6fad0ec-6d85-44b2-a8b0-c19b81b4b4de.png)
 
 네이버 영화 ERD
+
+
+
+![이클래스 수강신청 ERD](https://user-images.githubusercontent.com/75001605/127763326-c272b0ed-4f85-4a17-ba66-b68d0c5297fa.png)
+
+
+
+이클래스 수강신청 ERD
