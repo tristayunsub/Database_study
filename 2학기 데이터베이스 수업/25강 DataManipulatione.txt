@@ -1,0 +1,74 @@
+Quotation Mark, Apostrophe, Backtick
+
+'abcde' :Quotation mark- 사용안함
+'abcde':Apostrophe - 데이터에 사용 다른거다.
+`abcde`: backtick - 스키마명, 테이블명, 컬럼명, 사용자명에 사용(생략가능)
+
+grant all on `mydb`.* to `my`@`localhost` identified by '비밀번호';
+
+create schema `mydb`;
+
+drop schema mydb;
+
+백틱 생략가능.
+
+show create schema mydb;
+
+grant all on mydb.* my@localhost identified by 'xxxx';
+
+show grants for my@localhost;
+
+exit
+
+
+mysql -umy -p
+
+use mydb;
+
+create table department (dept_id char(4) not null, dept_name varchar(20)
+not null, primary key (dept_id));
+
+show create table table department;
+
+create table `department`(
+);
+
+insert into `department`(`dept_id`,`dept_name`) 테이블 스키마명 등에는 넣음.
+values('d001','Marketing'); 여기는 백틱아니고
+
+> insert department(dept_id, dept_name) values('d001','Marketing');
+
+article 스키마안에
+
+name을 같이쓰면 조인안해도되는 장점있음 아이디랑 이름은 자주중복
+wdate DATETIME 등록일시 
+udate TIMESTAMP 업데이트일시 데이터가 업데이트될때마다 자동업데이트
+
+CREATE TABLE user (
+userId int AUTO_INCREMENT,
+email varchar(45) NOT NULL,
+password char(64) NOT NULL,
+name varchar(45) NOT NULL,
+PRIMARY KEY (userId),
+UNIQUE KEY (email)
+);
+
+CREATE TABLE article(
+articleId int AUTO_INCREMENT,
+title varchar(255) NOT NULL,
+content text,
+userId int NOT NULL,
+name varchar(45) NOT NULL,
+wdate datetime NOT NULL DEFAULT current_timestamp(),
+udate timestamp NOT NULL,
+PRIMARY KEY (articleId),
+FOREIGN KEY (userId) REFERENCES user (userId)
+);
+테이블 컬럼명을 전부 영어로해야된다. column type도 중요하다.
+Indexes도 펼쳐놓는다. 물리적 모델링에선 중요하다.
+
+Browser -> request  (URL)          WEB SERVER   -> sql     DB SERVER
+           <- Response(HTML)                           <-result
+
+
+

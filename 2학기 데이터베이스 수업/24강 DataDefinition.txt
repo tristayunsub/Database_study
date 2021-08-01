@@ -1,0 +1,117 @@
+alter table user drop primary key;
+auto_increment 컬럼은 반드시 키여야하기때문에 드랍이안된다.
+alter table user modify userId int; 그냥하면
+auto increment 사라짐
+desc user;
+
+alter table user drop primary key;
+userId가 날라감.
+근데 자동적으로 email로 가네 Pri가
+show create table user;
+
+alter table user drop key email; 키이름을 써서 날려야됨
+
+desc user 프라이머리키 다시 만들고싶다
+
+alter table user add primary key (userId);
+
+auto increment로 바꾸고싶다
+
+alter table user modify userId int auto_increment;
+
+
+alter table user add unique key unq_email(email);
+
+키 이름을 만들수있다. unq_email로 
+
+
+alter table user drop key unq_email;로해야 unq_email키가 날라간다.
+
+alter table user add unique key (email, name);
+복합키가 된다. composite column key
+
+show create table user;
+
+alter table user drop key email; 키가나간다.
+
+desc로는 키를 정확히 볼수가없다.
+
+article을만들자.
+게시글에 제목은넣어야되지만 내용은넣어도되지않는다.
+
+create table article (articleId int auto_increment,
+->title varchar(255) not null,
+->content text, 
+->userId int,
+->date datetime not null default current_timestamp, primary key (articleId));
+
+desc article;
+하면 잘나온다.
+show create table article;
+
+drop table article;
+
+
+create table article (articleId int auto_increment,
+->title varchar(255) not null,
+->content text, 
+->userId int,
+->date datetime not null default current_timestamp, primary key (articleId)
+,foriegn key (userId) references user(userId));
+
+foriegn키가 만들어진다.
+
+show create table article;
+
+foriegn key를 안준다? 나중에 생성하고싶으면
+
+alter table article add foriegn key (userId) referneces user(userId);
+
+foreign key 날리고싶을떄 constraint name보고 날려라
+
+CONSTRAINT `article_ibfk_1` 
+
+alter table article drop key constraint article_ibfk_1;
+
+테이블에 데이터 넣어보자
+
+insert user(email, password, name) values('jacob@irafe.com',sha2('xxxx',256),'조원석')
+
+select * from user;
+
+머가나온다.
+
+insert user(email, password, name) values('jacob@irafe.com',sha2('b',256),'아무개')
+넣으려고하면
+
+duplicate entry 'david@naver.com' for key 'email' 이메일 아이디 중복이라 서안된다.
+
+insert article(title, content, userId, date) values('제목입니다.','내용입니다',1,now());
+
+select * from article;
+
+
+insert article(title, userId) values('제목입니다',2);
+
+테이블에다가 date time에 default로 current_timestamp() 넣엇으니까 default값으로 현재시각을 넣어준다.
+
+내용하고 제목만 넣으면 데이터값 자동세팅
+
+
+alter table article drop constraint 'article_ibfk_1;
+포른키사라짐
+
+insert article(title, userId) values ('제목입니다',3);
+하면 잘들어간다
+userId 3번으로 foriegn key가 없는 상태에서 들어갓는데
+
+alter table article add foriegn key (userId) references user(userId);
+
+foreign key가 들어갈수가없다 . userId가 3번이있기때문에
+
+delete from article where articleId=5; 5번글 날리면
+
+이상태에서 넣어야 foriegn key 넣을수있음.
+
+foreign key는 항상 미리 만들어줘야된다.
+
