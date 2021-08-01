@@ -4,3 +4,6 @@
 영화진흥위원회 MovieDB ERD
 
 
+![네이버영화ERD](https://user-images.githubusercontent.com/75001605/127763282-a6fad0ec-6d85-44b2-a8b0-c19b81b4b4de.png)
+
+네이버 영화 ERD
