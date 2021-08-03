@@ -34,4 +34,4 @@ DATA ON AIR 실무 바이블 :https://dataonair.or.kr/db-tech-reference/d-guide/
 
 # JPA/TypeOrm등 학습
 
-JPA 강의:https://www.youtube.com/watch?v=2Ct32nlhBzA&list=PLxU-iZCqT52AlV-Y7UlwSQp8N6pMjijFX&ab_channel=%EC%98%A4%EB%9D%BC%ED%81%B4%EC%9E%90%EB%B0%94%EC%BB%A4%EB%AE%A4%EB%8B%88%ED%8B%B0
+  JPA 강의:https://www.youtube.com/watch?v=0zTtkIYMOIw&list=PL9mhQYIlKEhfpMVndI23RwWTL9-VL-B7U&index=5&ab_channel=SKplanetTacademy
