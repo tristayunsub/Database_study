@@ -34,4 +34,25 @@ DATA ON AIR 실무 바이블 :https://dataonair.or.kr/db-tech-reference/d-guide/
 
 # JPA/TypeOrm등 학습
 
+한국어 강의
+https://www.youtube.com/playlist?list=PLvudjKUrAA6YNHxI1xiLcGtBhuXPwNAxk
+
+영어 강의
+https://www.youtube.com/playlist?list=PL5757A5DB24A40BDC
+
+Hibernate 영어 문서
+http://docs.jboss.org/hibernate/orm/4.3/manual/en-US/html/
+
+Hibernate Blog
+http://www.mkyong.com/tutorials/hibernate-tutorials/
+
+Hiberante API
+http://docs.jboss.org/hibernate/orm/5.1/javadocs/
+
+JPA API
+http://docs.jboss.org/hibernate/jpa/2.1/api/
+
+
+출처: https://yellowh.tistory.com/111 [노랭이의 공부공간]
+
   JPA 강의:https://www.youtube.com/watch?v=0zTtkIYMOIw&list=PL9mhQYIlKEhfpMVndI23RwWTL9-VL-B7U&index=5&ab_channel=SKplanetTacademy
