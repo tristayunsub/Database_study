@@ -58,3 +58,5 @@ http://docs.jboss.org/hibernate/jpa/2.1/api/
   JPA 강의:https://www.youtube.com/watch?v=0zTtkIYMOIw&list=PL9mhQYIlKEhfpMVndI23RwWTL9-VL-B7U&index=5&ab_channel=SKplanetTacademy
 
 Sequelize: https://www.youtube.com/watch?v=yD9wiNfez7o&t=3s&ab_channel=ALLSTACK
+
+Doc: https://sequelize.org/master/manual/model-basics.html
